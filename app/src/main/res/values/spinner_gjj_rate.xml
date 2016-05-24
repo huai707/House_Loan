@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_gjj_rate">
+        <item>手动输入</item>
+        <item>最新基准利率</item>
+        <!--4.05-->
+        <item>12-06-08基准利率</item>
+        <!--4.3-->
+        <item>11-07-07基准利率</item>
+        <!--4.5-->
+        <item>11-04-06基准利率</item>
+        <!--4.7-->
+        <item>11-02-09基准利率</item>
+        <!--4.9-->
+        <item>10-12-26基准利率</item>
+        <!--4.7-->
+        <item>10-10-20基准利率</item>
+        <!--4.5-->
+    </string-array>
+</resources>

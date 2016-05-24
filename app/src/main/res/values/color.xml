@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bl">#ff000000</color>
+    <!-- 黑色 -->
+    <color name="cy">#ff00ffff</color>
+    <!--蓝绿-->
+    <color name="ye">#ffffff00</color>
+    <!--黄色-->
+    <color name="ly">#FEF284</color>
+    <!-- 浅黄 -->
+    <color name="gr">#ff00ff00</color>
+    <!--绿-->
+    <color name="dg">#008800</color>
+    <!-- 深绿 -->
+    <color name="red">#ffff0000</color>
+    <!--红-->
+    <color name="pi">#ffc8ff</color>
+    <!-- 粉红 -->
+    <color name="ma">#ffff00ff</color>
+    <!--品红-->
+    <color name="wh">#ffffffff</color>
+    <!--白-->
+    <color name="tr">#00000000</color>
+    <!--透明 -->
+    <color name="lt">#ffcccccc</color>
+    <!--亮灰-->
+    <color name="dk">#ff444444</color>
+    <!--暗灰-->
+    <color name="gray">#ff888888</color>
+    <!--灰-->
+    <color name="lb">#a6bff2</color>
+    <!-- 淡蓝 -->
+    <color name="blue">#ff0000ff</color>
+    <!--蓝-->
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zgfa.house_loan"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/resize_png_new"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.zgfa.house_loan.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BusinessActivity"
+            android:label="@string/main_news" />
+        <activity
+            android:name=".MoreActivity"
+            android:label="@string/more" />
+        <activity
+            android:name=".GroupActivity"
+            android:label="@string/main_my_info" />
+        <activity
+            android:name=".PersonActivity"
+            android:label="@string/main_news" />
+        <activity
+            android:name=".AdviseActivity"
+            android:label="@string/menu_search" />
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sale_array">
+        <item>无折扣</item>
+        <item>1.2倍</item>
+        <item>1.15倍</item>
+        <item>1.1倍</item>
+        <item>1.05倍</item>
+        <item>95折</item>
+        <item>9折</item>
+        <item>85折</item>
+        <item>8折</item>
+        <item>75折</item>
+        <item>7折</item>
+    </string-array>
+    <string-array name="sale_array_number">
+        <item>1</item>
+        <item>1.2</item>
+        <item>1.15</item>
+        <item>1.1</item>
+        <item>1.05</item>
+        <item>0.95</item>
+        <item>0.9</item>
+        <item>0.85</item>
+        <item>0.8</item>
+        <item>0.75</item>
+        <item>0.7</item>
+    </string-array>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--公积金利率-->
+    <string-array name="string_gjj_array">
+        <item></item>
+        <!--手动输入-->
+        <item>4.05-</item>
+        <!--最新基准利率-->
+        <item>4.3</item>
+        <!--12-06-08基准利率-->
+        <item>4.5</item>
+        <!--11-07-07基准利率-->
+        <item>4.7</item>
+        <!--11-04-06基准利率-->
+        <item>4.9</item>
+        <!--11-02-09基准利率-->
+        <item>4.7</item>
+        <!--10-12-26基准利率-->
+        <item>4.5</item>
+        <!--10-10-20基准利率-->
+    </string-array>
+    <!--商业利率-->
+    <string-array name="string_sy_array">
+        <item></item>
+        <!--手动输入-->
+        <item>6.15</item>
+        <!-- 最新基准利率-->
+        <item>6.55</item>
+        <!-- 12-07-06基准利率-->
+        <item>6.8</item>
+        <!-- 12-06-08基准利率-->
+        <item>7.05</item>
+        <!-- 11-07-07基准利率-->
+        <item>6.8</item>
+        <!-- 11-04-06基准利率-->
+        <item>6.6</item>
+        <!-- 11-02-09基准利率-->
+        <item>6.4</item>
+        <!-- 10-12-26基准利率-->
+        <item>6.14</item>
+        <!-- 10-10-20基准利率-->
+    </string-array>
+</resources>

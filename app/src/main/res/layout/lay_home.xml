@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商业贷款金额："
+        android:id="@+id/tV_all_money"
+        android:textSize="15sp"
+        android:layout_gravity="fill_horizontal" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_money"
+        android:numeric="decimal"
+        android:maxLength="10"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="万元"
+        android:id="@+id/tV_unit"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商业贷款期限："
+        android:id="@+id/tV_all_years"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_years"
+        android:layout_columnSpan="2" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商业利率选择："
+            android:id="@+id/TextView_sylv"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_sy_rate" />
+
+        <Spinner
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_sy_sale" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商业贷款利率："
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_rate"
+            android:numeric="decimal"
+            android:maxLength="4"
+            android:textSize="15sp"
+            android:inputType="numberDecimal"/>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商业还款方式："
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sy"
+        android:contentDescription="利率计算类别"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton_bx"
+            android:text="等额本息"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton_bj"
+            android:text="等额本金" />
+    </RadioGroup>
+    <!--等额本息还款 指每个月还款额是固定的，本金比重逐月递增、利息比重逐月递减。-->
+    <!--等额本金还款 指每月还款额中本金保持相同，利息逐月递减，还款额也逐月递减。-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="商业贷款计算"
+        android:id="@+id/button_count"
+        android:layout_columnSpan="2" />
+    <!--<Button-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="重置"-->
+    <!--android:id="@+id/button_reset"-->
+    <!--/>-->
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:columnCount="4"
+        android:layout_columnSpan="3">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="利息总额:"
+            android:id="@+id/textView_sy_lx"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_sylx_show"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="累计还款总额:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_sylj_show"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15sp" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3">
+        <!-- 期次 -->
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="期次" />
+        <!-- 每月偿还（元） -->
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="每月偿还" />
+        <!-- 偿还利息（元） -->
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="偿还利息" />
+        <!--偿还本金（元）-->
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="偿还本金" />
+        <!--剩余本金（元）-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="剩余本金" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:id="@+id/listView_sy_show"
+        android:layout_columnSpan="3" />
+
+
+</GridLayout>
