@@ -22,7 +22,9 @@
         android:numeric="decimal"
         android:maxLength="10"
 
-        />
+        android:selectAllOnFocus="false"
+        android:focusable="false"
+        android:focusableInTouchMode="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,7 +83,9 @@
             android:numeric="decimal"
             android:maxLength="4"
             android:textSize="15sp"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+            android:focusable="false"
+            android:focusableInTouchMode="true"/>
 
     </GridLayout>
 
@@ -120,7 +124,9 @@
         android:layout_height="wrap_content"
         android:text="商业贷款计算"
         android:id="@+id/button_count"
-        android:layout_columnSpan="2" />
+        android:layout_columnSpan="2"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
     <!--<Button-->
     <!--android:layout_width="60dp"-->
     <!--android:layout_height="wrap_content"-->

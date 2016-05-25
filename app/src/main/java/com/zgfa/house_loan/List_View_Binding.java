@@ -2,8 +2,6 @@ package com.zgfa.house_loan;
 
 import android.content.Context;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +12,7 @@ import java.util.List;
 
 //绑定ListView数据
 public class List_View_Binding {
+
     public static void list_show(Context cc, ListView lv, int ll_months, double[] ld_month_money, double[] ld_month_lx, double[] ld_month_bj, double[] ld_month_sybj) {
 
         List<HashMap<String, Object>> data = new ArrayList<HashMap<String, Object>>();
@@ -27,8 +26,10 @@ public class List_View_Binding {
             data.add(item);
         }
         //创建SimpleAdapter适配器将数据绑定到item显示控件上
-        SimpleAdapter adapter;
-        adapter = new SimpleAdapter(cc, data, R.layout.item,
+        System.out.println(" ListViewAdapter");//调试语句
+
+        ListViewAdapter adapter;
+        adapter = new ListViewAdapter(cc, data, R.layout.item,
                 new String[]{"item_txv_qc", "item_txv_erery", "item_txv_lx", "item_txv_bj", "item_txv_sybj"},
                 new int[]{R.id.item_txv_qc, R.id.item_txv_erery, R.id.item_txv_lx, R.id.item_txv_bj, R.id.item_txv_sybj});
         //实现列表的显示

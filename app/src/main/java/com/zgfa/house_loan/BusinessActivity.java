@@ -31,15 +31,11 @@ public class BusinessActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lay_home);
-        //绑定贷款期限
         Spinner spinner = (Spinner) findViewById(R.id.spinner_years);
-        binding_years(spinner);
-        //绑定贷款利率
-        binding_rate();
-        //绑定计算按钮
-        binding_count();
-        //打折绑定
-        binding_sale();
+        binding_years(spinner);//绑定贷款期限
+        binding_rate();//绑定贷款利率
+        binding_count();//绑定计算按钮
+        binding_sale();  //打折绑定
 
     }
 
@@ -142,7 +138,6 @@ public class BusinessActivity extends Activity {
         });
     }
 
-
     //计算按钮事件
     private void binding_count() {
         Button button = (Button) findViewById(R.id.button_count);
@@ -156,6 +151,13 @@ public class BusinessActivity extends Activity {
         final EditText editText_all = (EditText) findViewById(R.id.editText_sylj_show);
         final ListView listView = (ListView) findViewById(R.id.listView_sy_show);
 
+        editText_money.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
