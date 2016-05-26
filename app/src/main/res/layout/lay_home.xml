@@ -21,10 +21,8 @@
         android:id="@+id/editText_money"
         android:numeric="decimal"
         android:maxLength="10"
-
-        android:selectAllOnFocus="false"
         android:focusable="false"
-        android:focusableInTouchMode="true" />
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,7 +56,8 @@
             android:layout_height="wrap_content"
             android:text="商业利率选择："
             android:id="@+id/TextView_sylv"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            />
 
         <Spinner
             android:layout_width="160dp"
@@ -85,7 +84,8 @@
             android:textSize="15sp"
             android:inputType="numberDecimal"
             android:focusable="false"
-            android:focusableInTouchMode="true"/>
+
+            />
 
     </GridLayout>
 
@@ -150,12 +150,13 @@
             android:textSize="15sp" />
 
         <EditText
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/editText_sylx_show"
             android:editable="false"
             android:enabled="false"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+          />
 
         <TextView
             android:layout_width="wrap_content"
@@ -165,12 +166,13 @@
             android:textSize="15sp" />
 
         <EditText
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/editText_sylj_show"
             android:editable="false"
             android:enabled="false"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+           />
 
 
     </GridLayout>

@@ -37,7 +37,10 @@ public class BusinessActivity extends Activity {
         binding_count();//绑定计算按钮
         binding_sale();  //打折绑定
 
+
     }
+
+
 
     //年限绑定
     protected void binding_years(Spinner spinner) {
@@ -151,11 +154,20 @@ public class BusinessActivity extends Activity {
         final EditText editText_all = (EditText) findViewById(R.id.editText_sylj_show);
         final ListView listView = (ListView) findViewById(R.id.listView_sy_show);
 
-        editText_money.setOnClickListener(new View.OnClickListener()
-        {
+        editText_money.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 v.setFocusable(true);
+                v.setFocusableInTouchMode(true);
+                v.requestFocus();
+            }
+        });
+        editText_rate.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.setFocusableInTouchMode(true);
+                v.requestFocus();
             }
         });
 

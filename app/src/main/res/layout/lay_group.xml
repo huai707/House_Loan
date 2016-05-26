@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText_group_sy_money"
         android:numeric="decimal"
-        android:maxLength="10" />
+        android:maxLength="10"
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +38,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText_group_gjj_money"
         android:numeric="decimal"
-        android:maxLength="10" />
+        android:maxLength="10"
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -176,7 +178,7 @@
             android:textSize="15dp" />
 
         <EditText
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/editText_group_sylx_show"
             android:editable="false"
@@ -204,7 +206,7 @@
             android:textSize="15dp" />
 
         <EditText
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/editText_group_alllx_show"
             android:editable="false"
