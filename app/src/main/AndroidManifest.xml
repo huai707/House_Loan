@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.zgfa.house_loan.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +33,9 @@
         <activity
             android:name=".AdviseActivity"
             android:label="@string/menu_search" />
+        <activity
+            android:name=".ItemsActivity"
+            android:label="@string/title_activity_items"></activity>
     </application>
 
 </manifest>

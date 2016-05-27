@@ -134,6 +134,14 @@
     <!--android:id="@+id/button_reset"-->
     <!--/>-->
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:id="@+id/button_test"
+        android:layout_row="4"
+        android:layout_column="2" />
+
     <GridLayout
         android:layout_width="fill_parent"
         android:layout_height="35dp"

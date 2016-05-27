@@ -2,6 +2,7 @@ package com.zgfa.house_loan;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.view.MotionEvent;
@@ -37,10 +38,21 @@ public class BusinessActivity extends Activity {
         binding_count();//绑定计算按钮
         binding_sale();  //打折绑定
 
+        bing_test();
 
     }
 
+    protected void bing_test(){
+        Button button= (Button) findViewById(R.id.button_test);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(BusinessActivity.this,ItemsActivity.class);
+                startActivity(intent);
 
+            }
+        });
+    }
 
     //年限绑定
     protected void binding_years(Spinner spinner) {
