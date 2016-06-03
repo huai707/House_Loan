@@ -8,5 +8,5 @@
     <string name="main_news">公积金贷款</string>
     <string name="main_my_info">组合贷款</string>
     <string name="menu_search">建议反馈</string>
-
+    <string name="title_activity_items">显示结果</string>
 </resources>

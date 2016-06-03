@@ -285,6 +285,11 @@ public class BusinessActivity extends Activity {
 
                     List_View_Binding.list_show(BusinessActivity.this, listView, ll_months, ld_month_money, ld_month_lx, ld_month_bj, ld_month_sybj);
 
+                    Intent intent=new Intent(BusinessActivity.this,ItemsActivity.class);
+                    startActivity(intent);
+                    final ListView listView_show= (ListView) findViewById(R.id.listView_show);
+                    List_View_Binding.list_show(ItemsActivity.this, listView_show, ll_months, ld_month_money, ld_month_lx, ld_month_bj, ld_month_sybj);
+
                 }
 
 
